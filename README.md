@@ -8,8 +8,17 @@
 git clone git@github.com:mengxw777/gin-skeleton.git
 ```
 
+### Create database
+```
 $ mysql> CREATE DATABASE matomo_db_name_here;
+```
+```
 $ mysql> CREATE USER 'matomo'@'localhost' IDENTIFIED BY 'my-strong-password-here';
+```
+```
 $ mysql> GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, DROP, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES ON matomo_db_name_here.* TO 'matomo'@'localhost';
+```
+```
 $ mysql> GRANT FILE ON *.* TO 'matomo'@'localhost';
+```
 
